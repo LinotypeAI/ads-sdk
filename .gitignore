@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files...
+!ads-sdk.js
+!README.md
+!LICENSE
+!.gitignore
