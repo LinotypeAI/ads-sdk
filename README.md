@@ -21,7 +21,7 @@ In your extension's HTML file (e.g., `popup.html`) add:
 
 ### Instantiate
 
-In your extension's JS file (e.g. `popup.js`) add:
+In your extension's JS file (e.g., `popup.js`) add:
 ```javascript
 const linotypeAds = new LinotypeAdsSDK({
     apiKey: "publisher-id",
@@ -49,7 +49,11 @@ const adsResponse = await linotypeAds.getAdForAgentResponse(response);
 // Display ad
 ```
 
-**Note:** We recommend adding a new line between the response and the ad, or displaying the ad in a separate text bubble to maintain clear visual separation.
+## Important Notes
+
+- **Visual Separation:** We recommend adding a new line between the response and the ad, or displaying the ad in a separate text bubble to maintain clear visual separation.
+- **Ad Validation:** Only display an ad if it exists, not if it's an empty string.
+- **Markdown Support:** Ensure your display supports markdown so hyperlinks render properly.
 
 ## License
 
