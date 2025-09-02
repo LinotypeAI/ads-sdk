@@ -211,11 +211,11 @@
     /**
      * Helper for agent response mode
      */
-    async getAdForAgentResponse(context, options = {}) {
+    async getAdForAgentResponse(response, options = {}) {
       const originalMode = this.mode;
       this.mode = 'agent-response';
       try {
-        const ad = await this.getAd(context, options);
+        const ad = await this.getAd(response, options);
         if (ad) {
           return this.getFormattedAd(ad);
         } else {

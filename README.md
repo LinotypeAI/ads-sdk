@@ -43,7 +43,7 @@ const linotypeAds = new LinotypeAdsSDK({
 });
 ```
 
-### Run ads in parallel to maximize latency
+### Generate ad in parallel to minimize latency
 
 Provide the most recent user query and any prior context that may be relevant:
 
@@ -54,7 +54,7 @@ const adsResponse = await adPromise;
 // Display ad
 ```
 
-### Run ads sequentially to maximize relevance
+### Generate ad sequentially to maximize relevance
 
 Provide the most recent agent response and any prior context that may be relevant:
 
