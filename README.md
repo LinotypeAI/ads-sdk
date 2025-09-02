@@ -3,9 +3,14 @@
 Official Linotype Ads SDK for integrating contextual ads into web applications and AI assistants.
 Also available as a Node.js package.
 
-## Installation
+## Installation (choose one)
 
-For Chrome Extensions:
+- NPM:
+```bash
+npm install linotype-ads-sdk
+```
+
+- GitHub:
 ```bash
 git clone https://github.com/LinotypeAI/ads-sdk.git
 ```
@@ -14,10 +19,19 @@ git clone https://github.com/LinotypeAI/ads-sdk.git
 
 ### Quick Start
 
-In your extension's HTML file (e.g., `popup.html`) add:
+In your extension's HTML file (e.g., `popup.html`), include the SDK (choose one):
+
+- NPM install path:
+```html
+<script src="node_modules/linotype-ads-sdk/dist/ads-sdk.js"></script>
+```
+
+
+- GitHub clone path:
 ```html
 <script src="ads-sdk/ads-sdk.js"></script>
 ```
+
 
 ### Instantiate
 
